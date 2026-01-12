@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ammu Organics Cold Pressed Mustard Oil | Kachi Ghani Sarson Ka Tel | Cooking, Skin & Hair</title>
+  <meta name="description" content="Ammu Organics Cold Pressed Mustard Oil — traditional kachi ghani sarson ka tel, cold-pressed and unrefined. Versatile for Indian cooking, body massage and hair oiling." />
+  <meta name="keywords" content="mustard oil, cold pressed mustard oil, kachi ghani, sarson ka tel, Ammu Organics, organic mustard oil" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ammu Organics Cold Pressed Mustard Oil" />
+  <meta property="og:description" content="100% pure cold-pressed kachi ghani mustard oil — ideal for Indian cooking, skin and hair massage." />
+  <meta property="og:image" content="images/mustard1.jpg" />
+  <meta property="og:type" content="product" />
+
+  <!-- JSON-LD Product -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Ammu Organics Cold Pressed Mustard Oil",
+    "image":[
+      "images/mustard1.jpg",
+      "images/mustard2.jpg",
+      "images/mustard3.jpg",
+      "images/mustard4.jpg",
+      "images/mustard5.jpg"
+    ],
+    "description":"100% pure cold-pressed mustard (sarson) oil, kachi ghani style. Unrefined, small-batch, for cooking, skin and hair massage.",
+    "sku":"AO-MST-001",
+    "brand":{"@type":"Brand","name":"Ammu Organics"},
+    "offers":{
+      "@type":"Offer",
+      "url":"https://example.com/mustard.html",
+      "priceCurrency":"INR",
+      "price":"190.00",
+      "availability":"https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{--green:#2f6f4e;--olive:#6b8a65;--beige:#fbf6ef;--accent:#c19a6b;--muted:#6b6b6b;--radius:12px;--max:1100px}
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--beige),#fff);color:#163222;margin:0}
+    a{color:inherit}
+    .container{max-width:var(--max);margin:0 auto;padding:28px}
+
+    header{position:fixed;left:0;right:0;top:0;z-index:60;background:rgba(255,255,255,0.98);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(0,0,0,0.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 22px}
+    .brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--green),var(--olive));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .site-title{font-weight:700}
+    nav a{margin-left:14px;font-weight:600}
+    .cta{padding:8px 14px;border-radius:10px;background:var(--accent);color:#fff}
+    main{padding-top:96px}
+
+    .product-wrap{margin-top:60px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+    @media (max-width:1000px){.product-wrap{grid-template-columns:1fr;padding:18px}}
+
+    .gallery{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:0 10px 28px rgba(0,0,0,0.06)}
+    .media-stage{width:100%;height:420px;overflow:hidden;border-radius:10px;position:relative;background:#f6f6f6;display:flex;align-items:center;justify-content:center}
+    .media-stage img,.media-stage video{width:100%;height:100%;object-fit:cover;display:block}
+    .thumbs{display:flex;gap:10px;margin-top:12px;overflow:auto;padding-bottom:6px}
+    .thumbs button{border:2px solid transparent;padding:0;border-radius:8px;background:transparent;cursor:pointer}
+    .thumbs img{width:96px;height:64px;object-fit:cover;border-radius:6px;display:block}
+    .thumbs button.active{border-color:var(--green)}
+    .nav-arrows{position:absolute;top:50%;left:12px;right:12px;display:flex;justify-content:space-between;transform:translateY(-50%);pointer-events:none}
+    .nav-arrows button{pointer-events:auto;background:rgba(255,255,255,0.85);border:none;padding:8px;border-radius:8px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+
+    .details{background:#fff;border-radius:var(--radius);padding:18px;box-shadow:0 10px 24px rgba(0,0,0,0.06)}
+    .details h1{font-size:20px;margin:0 0 6px}
+    .meta{color:var(--muted);font-size:14px}
+    .price{font-size:22px;color:var(--green);font-weight:700;margin:12px 0}
+
+    .variants{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}
+    .variant{padding:10px 14px;border-radius:10px;border:1px solid #e6e6e6;background:#fff;cursor:pointer}
+    .variant.selected{border-color:var(--green);background:rgba(47,111,78,0.06)}
+
+    .qty{display:flex;align-items:center;gap:8px;margin-top:12px}
+    .qty button{padding:8px 12px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer}
+    .qty input{width:64px;text-align:center;padding:8px;border-radius:8px;border:1px solid #eee}
+
+    .buy-row{display:flex;gap:12px;margin-top:14px}
+    .btn-buy{background:var(--green);color:#fff;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+    .btn-cart{background:#fff;border:2px solid var(--green);padding:10px 14px;border-radius:10px;color:#var(--green);cursor:pointer}
+
+    .panel{background:#fff;border-radius:12px;padding:14px;box-shadow:0 8px 20px rgba(0,0,0,0.04);margin-top:18px}
+    .field{display:flex;flex-direction:column;margin-bottom:10px}
+    label{font-size:13px;margin-bottom:6px;color:var(--muted)}
+
+    .cart-btn{position:fixed;right:18px;bottom:18px;background:var(--green);color:#fff;padding:12px 16px;border-radius:999px;border:none;box-shadow:0 10px 30px rgba(0,0,0,0.12);cursor:pointer;z-index:80}
+    .cart-drawer{position:fixed;right:0;top:0;height:100vh;width:420px;background:#fff;box-shadow:-12px 0 40px rgba(0,0,0,0.12);transform:translateX(110%);transition:transform .28s ease;z-index:90;padding:20px;overflow:auto}
+    .cart-drawer.open{transform:translateX(0)}
+    .cart-item{display:flex;gap:10px;border-bottom:1px dashed #eee;padding:10px 0}
+    .cart-summary{background:#fafafa;padding:12px;border-radius:8px;margin-top:10px}
+
+    .tabs{margin-top:16px}
+    .tab-buttons{display:flex;gap:8px;flex-wrap:wrap}
+    .tab-buttons button{padding:8px 12px;border-radius:8px;border:1px solid #e6e6e6;background:#fff;cursor:pointer}
+    .tab-buttons button.active{background:linear-gradient(90deg,#fff,#f6f2e9);border-color:var(--green)}
+    .tab-content{background:#fff;padding:16px;border-radius:8px;margin-top:12px;box-shadow:0 8px 20px rgba(0,0,0,0.04)}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:700px){.grid-2{grid-template-columns:1fr}.cart-drawer{width:95vw}}
+
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:14px;margin-top:40px}
+    .small{font-size:13px;color:var(--muted)}
+    .btn-ghost{background:#fff;border:1px solid #ddd;padding:8px;border-radius:8px;cursor:pointer}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand" id="brandLogo" role="link" aria-label="Ammu Organics Home">
+      <div class="logo">AO</div>
+      <div>
+        <div class="site-title">Ammu Organics</div>
+        <div style="font-size:12px;color:var(--muted)">Pure. Natural. Honest.</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="product-wrap" aria-labelledby="productTitle">
+
+    <!-- Gallery -->
+    <div class="gallery" aria-label="Product media gallery">
+      <div class="media-stage" id="mediaStage"></div>
+
+      <div class="nav-arrows">
+        <button id="prevBtn" aria-label="Previous media">‹</button>
+        <button id="nextBtn" aria-label="Next media">›</button>
+      </div>
+
+      <div class="thumbs" id="thumbs" role="tablist" aria-label="Product thumbnails"></div>
+    </div>
+
+    <!-- Details -->
+    <aside class="details">
+      <h1 id="productTitle">Ammu Organics Cold Pressed Mustard Oil | Kachi Ghani Sarson Ka Tel | Edible & Massage Grade</h1>
+      <div class="meta">Cold-pressed • Kachi Ghani • Traditional Indian Cooking Oil • For Skin & Hair Massage</div>
+      <div class="price" id="priceDisplay">₹190.00</div>
+
+      <p class="meta">Ammu Organics Cold Pressed Mustard Oil is made from premium mustard seeds using traditional kachi ghani pressing, giving a bold aroma and flavour that works beautifully in Indian cooking and massage rituals.</p>
+
+      <!-- Variants -->
+      <div style="margin-top:12px;font-weight:700">Choose size</div>
+      <div class="variants" id="variants">
+        <button class="variant selected" data-sku="MST100" data-price="190">100 ml</button>
+        <button class="variant" data-sku="MST200" data-price="340">200 ml</button>
+        <button class="variant" data-sku="MST500" data-price="750">500 ml</button>
+      </div>
+
+      <!-- Quantity & Buy -->
+      <div class="qty" aria-label="Quantity selector">
+        <button id="decQty" aria-label="Decrease quantity">-</button>
+        <input type="number" id="qtyInput" value="1" min="1" aria-label="Order quantity" />
+        <button id="incQty" aria-label="Increase quantity">+</button>
+      </div>
+
+      <div class="buy-row">
+        <button class="btn-buy" id="buyNow">Buy Now</button>
+        <button class="btn-cart" id="addCart">Add to Cart</button>
+      </div>
+
+      <div style="margin-top:12px;color:var(--muted);font-size:13px">SKU: <span id="skuDisplay">MST100</span> • Free shipping on orders over ₹999 (Tamil Nadu)</div>
+
+      <!-- Customer details -->
+      <div class="panel" id="customerPanel">
+        <h3 style="margin:0 0 8px">Customer details</h3>
+        <div class="field"><label for="custName">Full name</label><input id="custName" placeholder="Your name" /></div>
+        <div class="field"><label for="custPhone">Phone (with country code) e.g. 9196xxxxxxxx</label><input id="custPhone" placeholder="919629575552" /></div>
+
+        <div class="field"><label for="country">Country</label>
+          <select id="country">
+            <option value="India" selected>India</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="field"><label for="state">State / Region</label>
+          <select id="state">
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Other">Other (Rest of India / Abroad)</option>
+          </select>
+        </div>
+
+        <div class="field"><label for="city">Town / City</label><input id="city" placeholder="Chennai / Coimbatore / etc." /></div>
+        <div class="field"><label for="pincode">Pincode / ZIP</label><input id="pincode" placeholder="600xxx" /></div>
+        <div class="field"><label for="address">Full address</label><textarea id="address" rows="2" placeholder="House, street, landmark"></textarea></div>
+
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn-ghost" id="calcShippingBtn">Calculate Shipping</button>
+          <div class="small" id="shippingInfo" style="margin-left:auto">Shipping: —</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab-buttons" role="tablist" aria-label="Product details tabs">
+          <button class="active" data-tab="about">More Details</button>
+          <button data-tab="features">Key Features</button>
+          <button data-tab="benefits">Benefits & Uses</button>
+          <button data-tab="how">How to Use</button>
+        </div>
+
+        <div class="tab-content" id="tabContent">
+          <div data-panel="about">
+            <h3 style="margin-top:0">About the Product</h3>
+            <p>Ammu Organics Mustard Oil is stone / wood pressed in small batches, then filtered and packed quickly to bring you a fresh, flavourful cooking and massage oil.</p>
+            <ul>
+              <li>Ingredients: 100% mustard seed oil (Brassica juncea), cold-pressed, unrefined.</li>
+              <li>Storage: Store in a cool, dark place away from direct sunlight with cap tightly closed.</li>
+              <li>Shelf life: Best used within 9–12 months from pressing when stored properly.</li>
+            </ul>
+          </div>
+
+          <div data-panel="features" style="display:none">
+            <h3>Key Features</h3>
+            <ul>
+              <li>Traditional kachi ghani style pressing for a bold, authentic mustard flavour.</li>
+              <li>Unrefined and free from added colours, flavours and preservatives.</li>
+              <li>Versatile for tadka, sautéing, pickles and homemade spice mixes.</li>
+              <li>Can be used externally for body and hair oiling as part of your self-care routine.</li>
+            </ul>
+          </div>
+
+          <div data-panel="benefits" style="display:none">
+            <h3>Benefits & Uses</h3>
+            <div class="grid-2">
+              <div>
+                <h4>Cooking Ideas</h4>
+                <ul>
+                  <li>Use for tadka in dals, sabzis and gravies where you enjoy a pungent mustard kick.</li>
+                  <li>Pairs well with pickles, marinades and regional Bengali, Odia and North Indian recipes.</li>
+                  <li>Can be mixed with other oils if you prefer a milder mustard flavour.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Skin & Hair Rituals</h4>
+                <ul>
+                  <li>Use as a traditional body massage oil before a warm bath, especially in cooler weather.</li>
+                  <li>Massage into scalp and hair lengths before shampooing for an at-home hair oiling routine.</li>
+                  <li>Always patch test on a small area first and avoid using on irritated or very sensitive skin.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div data-panel="how" style="display:none">
+            <h3>How to Use</h3>
+            <h4>For Skin & Massage</h4>
+            <p>Apply a small amount to a test patch first; if comfortable, use a light layer for body massage and wash off with a gentle cleanser if needed.</p>
+            <h4>For Hair</h4>
+            <p>Warm a little oil, massage into scalp and hair, leave on for 30–60 minutes and then wash thoroughly with shampoo.</p>
+            <h4>For Cooking</h4>
+            <p>Heat the oil until it just starts to smoke lightly to mellow the pungency, then use it for tadka, stir-fries and other recipes that call for mustard oil.</p>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </section>
+
+  <!-- Why Choose -->
+  <section style="margin-top:18px">
+    <div class="container">
+      <h2 style="text-align:left">Why Choose Ammu Organics Mustard Oil?</h2>
+      <p style="color:var(--muted)">Careful cold pressing, small-batch handling and simple ingredient transparency make it a reliable choice for both your kitchen and traditional self-care routines.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Cart drawer -->
+<button class="cart-btn" id="openCart">Cart 🛒 (<span id="cartCount">0</span>)</button>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <h3>Cart</h3>
+  <div id="cartItems"></div>
+  <div class="cart-summary" id="cartSummary">
+    <div>Subtotal: ₹<span id="cartSubtotal">0</span></div>
+    <div>Shipping: ₹<span id="cartShipping">0</span></div>
+    <div style="font-weight:700;margin-top:8px">Total: ₹<span id="cartTotal">0</span></div>
+    <div style="margin-top:10px;display:flex;gap:8px">
+      <button id="checkoutWhatsApp" class="btn-buy" style="flex:1">Checkout via WhatsApp</button>
+      <button id="clearCart" class="btn-ghost" style="flex:0 0 auto">Clear</button>
+    </div>
+  </div>
+  <div style="margin-top:10px"><button id="closeCart" class="btn-ghost">Close</button></div>
+</aside>
+
+<footer>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© 2025 Ammu Organics. All Rights Reserved. | Made with ❤️ in India</div>
+      <div style="color:var(--muted)">📞 9629575552 | 📧 <a href="mailto:ammuorganicfood@gmail.com">ammuorganicfood@gmail.com</a> | <a href="https://www.instagram.com/ammuorganics8888/" target="_blank">@ammuorganics8888</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ====== Media (SEO filenames + alt text) ====== */
+const slides = [
+  {type:'image', src:'images/mustard1.jpg', alt:'ammu organics cold pressed mustard oil bottle front kachi ghani sarson ka tel'},
+  {type:'image', src:'images/mustard2.jpg', alt:'close up pour of cold pressed mustard oil from ammu organics bottle'},
+  {type:'image', src:'images/mustard3.jpg', alt:'mustard seeds and cold pressed mustard oil bottle'},
+  {type:'image', src:'images/mustard4.jpg', alt:'dark glass bottle mustard oil packaging ammu organics'},
+  {type:'image', src:'images/mustard5.jpg', alt:'raw mustard seeds closeup for cold pressed oil'},
+  {type:'video', src:'videos/mustard.mp4', poster:'images/mustard5.jpg', alt:'ammu organics mustard oil production video'}
+];
+
+const mediaStage = document.getElementById('mediaStage');
+const thumbs = document.getElementById('thumbs');
+let current = 0;
+let autoSlideTimer = null;
+
+function renderThumbs(){
+  thumbs.innerHTML = '';
+  slides.forEach((s,i)=>{
+    const btn = document.createElement('button');
+    btn.dataset.index = i;
+    btn.setAttribute('aria-label', s.type + ' ' + (i+1));
+    const img = document.createElement('img');
+    img.src = s.type === 'video' ? (s.poster || slides[0].src) : s.src;
+    img.alt = s.alt || '';
+    btn.appendChild(img);
+    btn.addEventListener('click', ()=>{ goTo(i); resetAutoSlide(); });
+    thumbs.appendChild(btn);
+  });
+}
+function renderMedia(idx){
+  mediaStage.innerHTML = '';
+  const s = slides[idx];
+  if(s.type === 'video'){
+    const v = document.createElement('video');
+    v.src = s.src; v.controls = true; v.playsInline = true; v.preload = 'metadata';
+    if(s.poster) v.setAttribute('poster', s.poster);
+    mediaStage.appendChild(v);
+  } else {
+    const img = document.createElement('img');
+    img.src = s.src; img.alt = s.alt || '';
+    mediaStage.appendChild(img);
+  }
+  thumbs.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
+  const active = thumbs.querySelector('button[data-index="'+idx+'"]');
+  if(active) active.classList.add('active');
+}
+function goTo(idx){ if(idx<0) idx=slides.length-1; if(idx>=slides.length) idx=0; current=idx; renderMedia(current); }
+function next(){ goTo(current+1); }
+function prev(){ goTo(current-1); }
+function startAutoSlide(){ stopAutoSlide(); autoSlideTimer=setInterval(()=>next(),4000); }
+function stopAutoSlide(){ if(autoSlideTimer) clearInterval(autoSlideTimer); }
+function resetAutoSlide(){ startAutoSlide(); }
+
+document.getElementById('nextBtn').addEventListener('click', ()=>{ next(); resetAutoSlide(); });
+document.getElementById('prevBtn').addEventListener('click', ()=>{ prev(); resetAutoSlide(); });
+let touchStartX=0;
+mediaStage.addEventListener('touchstart', e=>{ touchStartX=e.changedTouches[0].screenX; stopAutoSlide(); });
+mediaStage.addEventListener('touchend', e=>{ const diff=e.changedTouches[0].screenX-touchStartX; if(diff>40) prev(); else if(diff<-40) next(); startAutoSlide(); });
+
+renderThumbs(); goTo(0); startAutoSlide();
+
+/* ====== Variants + Price + SKU ====== */
+const variantsEl = document.getElementById('variants');
+const priceDisplay = document.getElementById('priceDisplay');
+const skuDisplay = document.getElementById('skuDisplay');
+let selectedVariant = variantsEl.querySelector('.variant.selected');
+
+variantsEl.addEventListener('click', e=>{
+  const v = e.target.closest('.variant'); if(!v) return;
+  variantsEl.querySelectorAll('.variant').forEach(x=>x.classList.remove('selected'));
+  v.classList.add('selected');
+  selectedVariant = v;
+  priceDisplay.textContent = '₹' + v.dataset.price + '.00';
+  skuDisplay.textContent = v.dataset.sku;
+  updateShippingInfo();
+});
+
+/* ====== Quantity controls ====== */
+const decBtn = document.getElementById('decQty');
+const incBtn = document.getElementById('incQty');
+const qtyInput = document.getElementById('qtyInput');
+
+decBtn.addEventListener('click', ()=>{ qtyInput.value = Math.max(1, parseInt(qtyInput.value||1)-1); updateShippingInfo(); });
+incBtn.addEventListener('click', ()=>{ qtyInput.value = Math.max(1, parseInt(qtyInput.value||1)+1); updateShippingInfo(); });
+qtyInput.addEventListener('input', ()=>{ if(parseInt(qtyInput.value||0)<1) qtyInput.value=1; updateShippingInfo(); });
+
+/* ====== Tabs ====== */
+const tabButtons = document.querySelectorAll('.tab-buttons button');
+const panels = document.querySelectorAll('[data-panel]');
+document.querySelector('.tab-buttons').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  tabButtons.forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  const tab = b.dataset.tab;
+  panels.forEach(p=>{ p.style.display = p.getAttribute('data-panel')===tab ? 'block' : 'none'; });
+});
+
+/* ====== Shipping calculator ======
+Rules used:
+- Tamil Nadu: ₹60 per item (free if subtotal >= 999)
+- South India (Kerala, Karnataka, Andhra Pradesh, Telangana): ₹80 per item
+- Rest of India / Other: ₹120 per item
+*/
+const calcShippingBtn = document.getElementById('calcShippingBtn');
+const shippingInfo = document.getElementById('shippingInfo');
+
+function perUnitShippingByState(state){
+  if(state === 'Tamil Nadu') return 60;
+  if(['Kerala','Karnataka','Andhra Pradesh','Telangana'].includes(state)) return 80;
+  return 120;
+}
+
+function getSubtotalAndQty(){
+  const price = Number(selectedVariant.dataset.price);
+  const qty = Math.max(1, Number(qtyInput.value));
+  const subtotal = price * qty;
+  return {subtotal, qty};
+}
+
+function computeShipping(subtotal, totalQty){
+  const state = document.getElementById('state').value;
+  if (state === 'Tamil Nadu') {
+    if (subtotal >= 999) return 0;
+    return 60 * totalQty;
+  }
+  if (['Kerala','Karnataka','Andhra Pradesh','Telangana'].includes(state)) {
+    return 80 * totalQty;
+  }
+  return 120 * totalQty;
+}
+
+function updateShippingInfo(){
+  const {subtotal, qty} = getSubtotalAndQty();
+  const ship = computeShipping(subtotal, qty);
+  shippingInfo.textContent = ship === 0 ? 'Shipping: Free' : 'Shipping: ₹' + ship;
+}
+updateShippingInfo();
+calcShippingBtn.addEventListener('click', ()=>{ updateShippingInfo(); alert(shippingInfo.textContent); });
+
+/* ========== CART SYSTEM ========== */
+let cart = [];
+const cartBtn = document.getElementById('openCart');
+const cartDrawer = document.getElementById('cartDrawer');
+const cartItemsEl = document.getElementById('cartItems');
+const cartSubtotalEl = document.getElementById('cartSubtotal');
+const cartShippingEl = document.getElementById('cartShipping');
+const cartTotalEl = document.getElementById('cartTotal');
+const cartCountEl = document.getElementById('cartCount');
+
+document.getElementById('closeCart').addEventListener('click', () => { cartDrawer.classList.remove('open'); });
+cartBtn.addEventListener('click', () => { cartDrawer.classList.add('open'); renderCart(); });
+
+function renderCart(){
+  cartItemsEl.innerHTML = '';
+  let subtotal = 0;
+  let totalQty = 0;
+  cart.forEach((it, idx)=>{
+    subtotal += it.price * it.qty;
+    totalQty += it.qty;
+    const div = document.createElement('div');
+    div.className = 'cart-item';
+    div.innerHTML = `
+      <div style="width:68px"><img src="${it.image || slides[0].src}" style="width:100%;border-radius:8px" alt="${it.alt || ''}"></div>
+      <div style="flex:1">
+        <div style="font-weight:700">${it.product}</div>
+        <div class="small">${it.variant}</div>
+        <div class="small">SKU: ${it.sku}</div>
+        <div style="margin-top:6px">Qty: ${it.qty} × ₹${it.price} = ₹${it.qty * it.price}</div>
+        <div style="margin-top:6px">
+          <button class="btn-ghost" data-idx="${idx}" onclick="removeCartItem(${idx})">Remove</button>
+        </div>
+      </div>
+    `;
+    cartItemsEl.appendChild(div);
+  });
+  cartCountEl.textContent = totalQty;
+  cartSubtotalEl.textContent = subtotal.toFixed(2);
+  const ship = computeShipping(subtotal, totalQty || 0);
+  cartShippingEl.textContent = ship.toFixed(2);
+  cartTotalEl.textContent = (subtotal + ship).toFixed(2);
+}
+
+window.removeCartItem = function(idx){
+  cart.splice(idx,1);
+  renderCart();
+};
+
+/* Add to cart */
+document.getElementById('addCart').addEventListener('click', ()=>{
+  const variantText = selectedVariant ? selectedVariant.textContent.trim() : 'Default';
+  const sku = skuDisplay.textContent.trim();
+  const qty = parseInt(qtyInput.value || 1, 10);
+  const price = Number(selectedVariant.dataset.price);
+  cart.push({
+    sku,
+    product: 'Ammu Organics Cold Pressed Mustard Oil',
+    variant: variantText,
+    qty,
+    price,
+    image: slides[0].src,
+    alt: slides[0].alt
+  });
+  alert('Added to cart: ' + variantText + ' (Qty: ' + qty + ')');
+  renderCart();
+  cartDrawer.classList.add('open');
+});
+
+/* Clear cart */
+document.getElementById('clearCart').addEventListener('click', ()=>{
+  if(confirm('Clear cart?')){ cart = []; renderCart(); }
+});
+
+/* Checkout via WhatsApp from Cart */
+document.getElementById('checkoutWhatsApp').addEventListener('click', ()=>{
+  if(cart.length === 0){ alert('Cart is empty'); return; }
+
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim() || '919629575552';
+  const country = document.getElementById('country').value;
+  const state = document.getElementById('state').value;
+  const city = document.getElementById('city').value;
+  const pincode = document.getElementById('pincode').value;
+  const address = document.getElementById('address').value;
+
+  let body = '🛒 *Ammu Organics - Cart Order*%0A%0A';
+  cart.forEach((it, i)=>{
+    body += `*${i+1}.* ${it.product} — ${it.variant} — Qty: ${it.qty} — ₹${it.price}\\n`;
+  });
+  const subtotal = cart.reduce((s,it)=>s + (it.price * it.qty), 0);
+  const totalQty = cart.reduce((s,it)=>s + it.qty, 0);
+  const shipping = computeShipping(subtotal, totalQty);
+  const total = subtotal + shipping;
+
+  body += `%0ASubtotal: ₹${subtotal.toFixed(2)}%0AShipping: ₹${shipping.toFixed(2)}%0ATotal: ₹${total.toFixed(2)}%0A%0A`;
+  body += `*Customer:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}, ${city}, ${state}, ${pincode}, ${country}%0A%0APlease confirm order.`;
+
+  const waPhone = (phone && phone.match(/^\d+$/)) ? phone : '919629575552';
+  const url = `https://wa.me/${waPhone}?text=${body}`;
+  window.open(url, '_blank');
+});
+
+/* ====== Buy Now → WhatsApp (single product immediate checkout) ====== */
+document.getElementById('buyNow').addEventListener('click', ()=>{
+  const variantText = selectedVariant ? selectedVariant.textContent.trim() : 'Default';
+  const sku = skuDisplay.textContent.trim();
+  const qty = Number(qtyInput.value || 1);
+  const priceEach = Number(selectedVariant.dataset.price);
+  const subtotal = priceEach * qty;
+
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim() || '919629575552';
+  const country = document.getElementById('country').value;
+  const state = document.getElementById('state').value;
+  const city = document.getElementById('city').value;
+  const pincode = document.getElementById('pincode').value;
+  const address = document.getElementById('address').value;
+
+  const shipping = computeShipping(subtotal, qty);
+  const total = subtotal + shipping;
+
+  let msg = `🛒 *Ammu Organics - Order Request*%0A%0A`;
+  msg += `*Product:* Ammu Organics Cold Pressed Mustard Oil%0A`;
+  msg += `*Variant:* ${variantText}%0A`;
+  msg += `*SKU:* ${sku}%0A`;
+  msg += `*Quantity:* ${qty}%0A`;
+  msg += `*Price (each):* ₹${priceEach}%0A`;
+  msg += `*Subtotal:* ₹${subtotal.toFixed(2)}%0A`;
+  msg += `*Shipping:* ₹${shipping.toFixed(2)}%0A`;
+  msg += `*Total:* ₹${total.toFixed(2)}%0A%0A`;
+  msg += `*Customer Details*%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}, ${city}, ${state}, ${pincode}, ${country}%0A%0APlease confirm the order.`;
+
+  const waPhone = (phone && phone.match(/^\d+$/)) ? phone : '919629575552';
+  const url = `https://wa.me/${waPhone}?text=${msg}`;
+  window.open(url, '_blank');
+});
+
+/* Brand logo -> home */
+document.getElementById('brandLogo').addEventListener('click', ()=>{ window.location.href = 'index.html'; });
+
+/* keyboard support for thumbs */
+thumbs.addEventListener('keydown', e=>{ if(e.key==='ArrowRight') next(); if(e.key==='ArrowLeft') prev(); });
+
+/* initial render cart count */
+renderCart();
+</script>
+
+</body>
+</html>
